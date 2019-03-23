@@ -36,6 +36,7 @@ public class CourseService {
 	public void addCourse(Course course) {
 //		topics.add(topic);
 		courseRepository.save(course);
+		System.out.println(course + " add to the list");
 	}
 	
 	public void updateCourse(Course course) {
