@@ -45,4 +45,4 @@ docker run -d --volumes-from vc_mongo_shared -p 27017-27019:27017-27019 --name m
 
 -> Inside container shell
 
-root@container_id:/# mongo  <- log into mongo db
+```root@container_id:/# mongo```  <- log into mongo db
