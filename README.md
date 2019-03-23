@@ -32,8 +32,13 @@ mvn clean install
 java -jar target/SpringBoot-0.0.1-SNAPSHOT.jar
 
 Create Mongo DB 
+
 docker pull mongo 4.0.4
+
 docker run -d -p 27017-27019:27017-27019 --name my_mongodb mongo:4.0.4
+
 docker exec -it my_mongodb bash
+
 -> Inside container shell
+
 root@container_id:/# mongo  <- log into mongo db
