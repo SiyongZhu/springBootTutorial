@@ -15,6 +15,8 @@ public class Course {
 		private String name;
 		private String description;
 		
+		//The Annotation forces topic data is fetched with course
+		//from table as well. 
 		@ManyToOne
 		private Topic topic;
 		

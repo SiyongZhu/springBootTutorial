@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.javabrain.springboot.topic.Topic;
+import io.javabrain.springboot.topic.TopicService;
 
 @RestController
 public class CourseController {
@@ -17,8 +18,11 @@ public class CourseController {
 	@Autowired
 	private CourseService courseService;
 	
+	@Autowired
+	private TopicService topicService;
+	
 	@RequestMapping("/topics/{topicId}/courses")
-	public List<Course> getAllCourses(String topicId) {
+	public List<Course> getAllCourses(@PathVariable String topicId) {
 		return courseService.getAllCourses(topicId);
 	}
 	
@@ -29,6 +33,10 @@ public class CourseController {
 	
 	@RequestMapping(method=RequestMethod.POST, value="/topics/{topicId}/courses")
 	public void addCourse(@RequestBody Course course, @PathVariable String topicId) {
+//		Topic topic = topicService.getTopic(topicId);
+//		course.setTopic(topic);
+		//NOTE: if the topicId already exists, there is no need to fetch the topic
+		//Just create a dummy topic object, and course will look for the real topic based on topicId
 		course.setTopic(new Topic(topicId, "", ""));
 		courseService.addCourse(course);
 	}
