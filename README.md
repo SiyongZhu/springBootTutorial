@@ -31,18 +31,3 @@ cd path/to/SpringBootTutorial
 mvn clean install
 java -jar target/SpringBoot-0.0.1-SNAPSHOT.jar
 
-**Create Mongo DB In Docker Container** 
-```
-docker pull mongo 4.0.4
-```
-  1 _Create a volume container_ 
-```
-docker run -d --volume /data/db --name vc_mongo_shared alpine echo Data container
-docker run -d --volumes-from vc_mongo_shared -p 27017-27019:27017-27019 --name my_mongodb mongo:4.0.4
-```
-  2 _Shell into container_
-```docker exec -it my_mongodb bash ```
-
-  - Inside container shell
-
-```root@container_id:/# mongo```  <- log into mongo db
