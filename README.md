@@ -1,3 +1,10 @@
+```
+git init
+git remote add origin https://github.com/SiyongZhu/SpringMongo.git
+git checkout master
+git branch --set-upstream-to=origin/master master
+```
+
 # springBootTutorial
 My First Spring Boot Learning Project
 
