@@ -18,6 +18,7 @@ public class CourseController {
 	@Autowired
 	private CourseService courseService;
 	
+	@SuppressWarnings("unused")
 	@Autowired
 	private TopicService topicService;
 	

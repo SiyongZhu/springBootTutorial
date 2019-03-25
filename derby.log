@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Sat Mar 23 04:18:06 EDT 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0169-a9a0-e036-00000ef492b8 
-on database directory memory:/Users/siyongzhu/sy_workspace/SpringBootTutorial/testdb with class loader org.springframework.boot.loader.LaunchedURLClassLoader@1b28cdfa 
-Loaded from jar:file:/Users/siyongzhu/sy_workspace/SpringBootTutorial/target/SpringBoot-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/derby-10.13.1.1.jar!/
+Mon Mar 25 11:07:09 EDT 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0169-b564-1890-00000fcf6508 
+on database directory memory:/Users/siyongzhu/sy_workspace/springBootTutorial/testdb with class loader sun.misc.Launcher$AppClassLoader@764c12b6 
+Loaded from file:/Users/siyongzhu/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_91-b14
-user.dir=/Users/siyongzhu/sy_workspace/SpringBootTutorial
+user.dir=/Users/siyongzhu/sy_workspace/springBootTutorial
 os.name=Mac OS X
 os.arch=x86_64
 os.version=10.11.6
