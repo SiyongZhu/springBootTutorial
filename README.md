@@ -34,7 +34,9 @@ PUT http://localhost:8080/topics/java/courses/cmpt201
 
 
 To package the web app
+```
 cd path/to/SpringBootTutorial
 mvn clean install
 java -jar target/SpringBoot-0.0.1-SNAPSHOT.jar
+```
 
